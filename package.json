@@ -1,0 +1,19 @@
+{
+  "name": "sallys_kitchen",
+  "version": "1.0.0",
+  "description": "Sally's Kitchen Website",
+  "main": "index.html",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/jolane/sallys-kitchen.git"
+  },
+  "author": "jolane@jolane.net",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/jolane/sallys-kitchen#readme"
+}
