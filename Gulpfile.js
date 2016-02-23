@@ -28,7 +28,7 @@ var processors = [
 
 // SCSS workflow.
 gulp.task('sass', function() {
-    gulp.src('resources/sass/**/*.scss')
+    gulp.src('sass/**/*.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(postcss(processors))
         .pipe(sourcemaps.write())
@@ -36,35 +36,35 @@ gulp.task('sass', function() {
             basename : 'main',
             extname : '.css'
         }))
-        .pipe(gulp.dest('resources/css'))
+        .pipe(gulp.dest('css'))
         .pipe(browserSync.stream());
 });
 
 // JS vendor scripts
 gulp.task('js-vendor', function() {
-    gulp.src('resources/js/vendor/*.js')
+    gulp.src('js/vendor/*.js')
         .pipe(concat('vendor.min.js'))
         .pipe(uglify())
-        .pipe(gulp.dest('resources/js'));
+        .pipe(gulp.dest('js'));
 });
 
 // JS general working files
 gulp.task('js', function() {
-    gulp.src(['resources/js/*.js', '!resources/js/*.min.js'])
+    gulp.src(['js/*.js', '!js/*.min.js'])
         .pipe(sourcemaps.init())
         .pipe(concat('scripts.min.js'))
         .pipe(uglify())
         .pipe(sourcemaps.write())
-        .pipe(gulp.dest('resources/js'));
+        .pipe(gulp.dest('js'));
 });
 
 
 // Compress images (This will overwirte the images with the compressed ones)
 // Can't not be put on watch because it will go into infinite loop.
 gulp.task('img', function() {
-    gulp.src('resources/images/**/*.*')
+    gulp.src('images/**/*.*')
         .pipe(imagemin({ progressive: true }))
-        .pipe(gulp.dest('resources/images'));
+        .pipe(gulp.dest('images'));
 });
 
 
@@ -78,9 +78,9 @@ gulp.task('default', function() {
         browser : 'google chrome'
     });
 
-    gulp.watch('resources/sass/**/*.scss', ['sass']);
-    gulp.watch('resources/js/vendor/*.js', ['js-vendor']).on('change', browserSync.reload);
-    gulp.watch('resources/js/*.js', ['js']).on('change', browserSync.reload);
+    gulp.watch('sass/**/*.scss', ['sass']);
+    gulp.watch('js/vendor/*.js', ['js-vendor']).on('change', browserSync.reload);
+    gulp.watch('js/*.js', ['js']).on('change', browserSync.reload);
     gulp.watch("*.html").on('change', browserSync.reload);
 
 });

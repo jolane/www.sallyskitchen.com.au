@@ -1,0 +1,21 @@
+.header {
+
+    @include box(1400, 790);
+
+    &__inner {
+        background-size: cover;
+        background-position: center center;
+        background-image: url("../img/header.jpg");
+    }
+
+    &__logo {
+        margin: 0;
+        padding: 0;
+    }
+
+    &__make-a-booking {
+        float: right;
+    }
+
+
+}

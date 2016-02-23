@@ -1,0 +1,11 @@
+.image-block {
+
+    @include box(1400, 670);
+
+    &__inner {
+        background-size: cover;
+        background-color: #ddd;
+        background-position: center center;
+    }
+
+}
