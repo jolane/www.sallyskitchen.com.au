@@ -1,0 +1,39 @@
+.the-latest {
+
+
+
+    @include box(1400, 695);
+    overflow: hidden;
+
+
+    &__cell {
+        width: 33.3332%;
+        height: 100%;
+        float: left;
+        background-color: green;
+        display: table;
+
+
+        &-inner {
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+
+        }
+
+
+        &:hover {
+            background-color: red;
+        }
+    }
+
+    &__cell-action {
+        background-color: blue;
+        width: 100%;
+        height: 85px;
+        position: absolute;
+        top: 100%;
+        left: 0;
+    }
+
+}
