@@ -12,12 +12,23 @@
         margin: 0;
         padding: 0;
         background-image: url("../icon/sallys-kitchen-logo.svg");
-        text-indent: -999em;
+        // text-indent: -999em;
+        position: absolute;
+        z-index: 200;
+        left: 80px;
+        top: 70px;
+    }
 
+    &__intro {
+        z-index: 1;
     }
 
     &__make-a-booking {
-        float: right;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 200;
+
     }
 
 

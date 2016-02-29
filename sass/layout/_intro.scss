@@ -21,6 +21,17 @@
         text-align: center;
     }
 
+    &__text {
+        font-size: 4.75em;
+        color: #fff;
+        font-family: 'GT Walsheim Thin';
+        font-weight: 200;
+    }
 
+    &__is-text {
+        font-family: 'GT Walsheim Medium';
+        font-weight: 400;
+        border-bottom: 1px dashed #fff;
+    }
 
 }
