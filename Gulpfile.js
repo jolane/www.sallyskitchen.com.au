@@ -102,6 +102,7 @@ gulp.task('default', function() {
         browser : 'google chrome'
     });
 
+    gulp.watch('icons/*.svg', ['svg']).on('change', browserSync.reload);
     gulp.watch('sass/**/*.scss', ['sass']);
     gulp.watch('js/vendor/*.js', ['js-vendor']).on('change', browserSync.reload);
     gulp.watch('js/*.js', ['js']).on('change', browserSync.reload);
