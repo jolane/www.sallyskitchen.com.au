@@ -18,6 +18,13 @@ var autoprefixer = require('autoprefixer');
 var cssnano = require('cssnano');
 var comments = require('postcss-discard-comments');
 
+// SVG
+svgmin = require('gulp-svgmin');
+svgstore = require('gulp-svgstore');
+svg2png = require('gulp-svg2png');
+rsp = require('remove-svg-properties').stream;
+
+
 // Post CSS Processors
 var processors = [
     comments({removeAll: true}),
@@ -66,6 +73,23 @@ gulp.task('img', function() {
         .pipe(imagemin({ progressive: true }))
         .pipe(gulp.dest('images'));
 });
+
+gulp.task('svg', function() {
+
+    gulp.src('icons/*.svg')
+        .pipe(rsp.remove({
+            properties: [rsp.PROPS_FILL]
+        }))
+        .pipe(svgmin())
+        .pipe(svgstore({ inlineSvg: true }))
+        .pipe(gulp.dest('img'));
+
+    // create fallback
+    gulp.src('icons/*.svg')
+        .pipe(svg2png())
+        .pipe(gulp.dest('img/fallback'));
+});
+
 
 
 // Watch & Run

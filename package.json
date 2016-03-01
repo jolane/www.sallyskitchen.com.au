@@ -29,8 +29,12 @@
     "gulp-replace": "^0.5.4",
     "gulp-sass": "^2.2.0",
     "gulp-sourcemaps": "^1.6.0",
+    "gulp-svg2png": "^1.0.0",
+    "gulp-svgmin": "^1.2.2",
+    "gulp-svgstore": "^5.0.5",
     "gulp-uglify": "^1.5.1",
     "imagemin-pngquant": "^4.2.0",
-    "postcss-discard-comments": "^2.0.4"
+    "postcss-discard-comments": "^2.0.4",
+    "remove-svg-properties": "^0.3.2"
   }
 }
