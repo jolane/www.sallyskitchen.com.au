@@ -11,18 +11,21 @@
         background-color: green;
         display: table;
 
-
-        &-inner {
-            display: table-cell;
-            vertical-align: middle;
-            text-align: center;
-
-        }
-
-
         &:hover {
             background-color: red;
         }
+    }
+
+    &__cell-inner {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        font-family: $thin-heading;
+        font-size: 1.5em;
+        line-height: 1.12;
+        padding: 0 14%;
+        box-sizing: border-box;
+        color: #fff;
     }
 
     &__cell-action {
@@ -32,6 +35,14 @@
         position: absolute;
         top: 100%;
         left: 0;
+    }
+
+    &__cell-heading {
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        margin: 0 0 1.4em 0;
+        font-family: $main-font;
+        font-weight: normal;
     }
 
 }

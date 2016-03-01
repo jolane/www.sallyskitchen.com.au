@@ -25,11 +25,11 @@
 
 @font-face {
   font-family: 'GT Walsheim Bold';
-  src: url('../fontsGT-Walsheim-Bold.eot'); /* IE9 Compat Modes */
-  src: url('../fontsGT-Walsheim-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fontsGT-Walsheim-Bold.woff') format('woff'), /* Modern Browsers */
-       url('../fontsGT-Walsheim-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('../fontsGT-Walsheim-Bold.svg#bdf76190e7d3b4d381fd92e43e1b9dc0') format('svg'); /* Legacy iOS */
+  src: url('../fonts/GT-Walsheim-Bold.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/GT-Walsheim-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/GT-Walsheim-Bold.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/GT-Walsheim-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/GT-Walsheim-Bold.svg#bdf76190e7d3b4d381fd92e43e1b9dc0') format('svg'); /* Legacy iOS */
 
   font-style:   normal;
   font-weight:  700;
@@ -41,18 +41,3 @@ body {
     line-height: 2;
     color: #1A1A1A;
 }
-
-
-.callout-text {
-    font-family: 'GT Walsheim Thin';
-    font-size: 2.25em;
-    line-height: 1.33;
-    padding: 0;
-
-    & span {
-        border-bottom: 1px dashed #1A1A1A;
-    }
-
-}
-
-

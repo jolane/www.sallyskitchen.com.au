@@ -3,5 +3,33 @@
 
     &__item {
         display: inline-block;
+        height: 52px;
+        line-height: 52px;
+        vertical-align: middle;
+        margin: 0 22px;
+        font-family: $medium-heading;
+    }
+
+    &__circle {
+        height: 52px;
+        width: 52px;
+        box-sizing: border-box;
+        border-radius: 50%;
+        display: inline-block;
+        border: 1px solid #ccc;
+        margin-right: 6px;
+        position: relative;
+        vertical-align: middle;
+    }
+
+    &__icon {
+        box-sizing: border-box;
+        height: 100%;
+        width: 100%;
+        fill: #666666;
+        padding: 12px;
+        position: absolute;
+        top: 0;
+        left: 0;
     }
 }

@@ -1,12 +1,11 @@
 .where {
 
     &__map {
+        margin-top: 90px;
         @include box(1400, 670);
     }
 
-    &__map--inner {
-
+    &__map-inner {
+        background-color: #ccc;
     }
-
-
 }
