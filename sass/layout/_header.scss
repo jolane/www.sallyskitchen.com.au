@@ -45,9 +45,24 @@
 
     &__make-a-booking {
         position: absolute;
-        top: 0;
-        right: 0;
+        top: 57px;
+        right: 80px;
         z-index: 200;
+        color: #fff;
+        font-family: $medium-heading;
+        cursor: pointer;
+    }
+
+    &__make-a-booking-circle {
+        @extend .circle-icon;
+        height: 52px;
+        width: 52px;
+    }
+
+    &__make-a-booking-circle &__make-a-booking-icon {
+        @extend .circle-icon__icon;
+        fill: #fff;
+        padding: 14px;
     }
 
 

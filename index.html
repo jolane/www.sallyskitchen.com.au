@@ -43,6 +43,11 @@
 
                     <div class="header__make-a-booking">
                         Make a Booking
+                        <span class="header__make-a-booking-circle">
+                            <svg class="icon header__make-a-booking-icon">
+                                <use xlink:href="#icon-calendar"></use>
+                            </svg>
+                        </span>
                     </div>
                     <div class="header__intro intro">
                         <div class="intro__table">
@@ -148,9 +153,11 @@
 
                         <a href="/pdfs/menu.pdf" target="_blank" class="menu__pdf-button">
                             View PDF
-                            <svg class="icon">
-                                <use xlink:href="#icon-next-arrow"></use>
-                            </svg>
+                            <span class="menu__pdf-button-circle">
+                                <svg class="icon menu__pdf-button-icon">
+                                    <use xlink:href="#icon-next-arrow"></use>
+                                </svg>
+                            </span>
                         </a>
                     </div>
                 </div>
@@ -230,7 +237,24 @@
                         RSVP ON FACEBOOK
                     </a>
                 </div>
-                <div class="the-latest__cell"></div>
+                <div class="the-latest__cell">
+                    <div class="the-latest__cell-inner">
+                        <h6 class="the-latest__cell-heading">From Facebook</h6>
+                        <p>
+                            Stop by, feel welcome, eat well.
+                        </p>
+                    </div>
+
+                    <a class="the-latest__cell-action">
+                        <span class="the-latest__cell-circle">
+                            <svg class="icon the-latest__cell-icon">
+                                <use xlink:href="#icon-facebook"></use>
+                            </svg>
+                        </span>
+                        RSVP ON FACEBOOK
+                    </a>
+
+                </div>
                 <div class="the-latest__cell"></div>
             </div>
 
@@ -278,7 +302,7 @@
 
         </div>
         <div class="where__map">
-            <div class="where__map-inner">
+            <div class="where__map-inner" id="map">
 
             </div>
         </div>
@@ -289,6 +313,7 @@
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
 
     <script>
         (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=

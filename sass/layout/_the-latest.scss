@@ -25,10 +25,10 @@
         color: #fff;
         position: relative;
         transition: all 0.3s linear;
+    }
 
-        &:hover {
-            transform: translateY(-85px);
-        }
+    &_cell:hover &__cell-inner {
+        transform: translateY(-85px);
     }
 
     &__cell-action {
@@ -60,12 +60,16 @@
 
     &__cell-circle {
         @extend .circle-icon;
+        height: 47px;
+        width: 47px;
+        margin-right: 15px;
     }
 
     &__cell-icon {
+        @extend .circle-icon__icon;
         position: absolute;
         fill: $black;
-        padding: 20px;
+        padding: 14px;
     }
 
 }

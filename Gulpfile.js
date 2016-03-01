@@ -36,6 +36,7 @@ var processors = [
 // SCSS workflow.
 gulp.task('sass', function() {
     gulp.src('sass/**/*.scss')
+        .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
         .pipe(postcss(processors))
         .pipe(sourcemaps.write())
