@@ -3,11 +3,8 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
-
-# THANKS
-
-    <name>
+    Jolane Synott -- Developer -- @jolane
+    Georgie Batt -- Designer -- @jolane
 
 # TECHNOLOGY COLOPHON
 
