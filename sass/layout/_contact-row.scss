@@ -17,12 +17,18 @@
 
         @include break(to-mobile) {
             display: block;
-            margin: 0 0 15px 0;
+            margin: 0 0 0px 0;
+            font-size: 1.125em;
         }
     }
 
     &__circle {
         @extend .circle-icon;
+
+        @include break(to-mobile) {
+            height: 37px;
+            width: 37px;
+        }
     }
     &__item:hover &__circle {
         background-color: #ccc;
@@ -30,15 +36,12 @@
 
 
     &__icon {
-        box-sizing: border-box;
-        height: 100%;
-        width: 100%;
-        fill: #666666;
-        padding: 12px;
-        position: absolute;
-        top: 0;
-        left: 0;
+        @extend .circle-icon__icon;
+        padding: 8px;
+        fill: #666;
     }
+
+
     &__item:hover &__icon {
         fill: #fff;
     }

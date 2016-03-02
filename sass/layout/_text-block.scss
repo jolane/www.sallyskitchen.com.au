@@ -70,7 +70,12 @@
         }
 
         @include break(to-mobile) {
+            font-size: 1.68em;
             padding: 0 35px;
+
+            & br {
+                display: none;
+            }
         }
     }
 

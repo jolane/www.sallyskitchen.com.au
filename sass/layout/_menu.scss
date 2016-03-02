@@ -3,6 +3,12 @@
     position: relative;
     background-color: green;
 
+    @include break(to-mobile) {
+        width: 100%;
+        overflow: hidden;
+
+    }
+
     &__tabs {
         text-align: center;
         padding: 0;
@@ -25,6 +31,10 @@
             left: 50%;
             top: 0;
             margin-left: 480px;
+
+            @include break(to-mobile) {
+                display: none;
+            }
         }
 
         &:before {
@@ -37,6 +47,16 @@
             right: 50%;
             top: 0;
             margin-right: 480px;
+            @include break(to-mobile) {
+                display: none;
+            }
+        }
+
+        @include break(to-mobile) {
+            height: 110px;
+            width: 300%;
+            text-align: left;
+            overflow: auto;
         }
 
 
@@ -58,6 +78,24 @@
             background-color: transparent;
             color: #fff;
         }
+
+        @include break(to-mobile) {
+            width: auto;
+            background-color: transparent;
+            color: #fff;
+            background-image: url("../icons/icon-menu-arrow.svg");
+            background-size: 28px 4px;
+            background-repeat: no-repeat;
+            background-position: 13px 37px;
+            padding: 35px 0 0 50px;
+
+            &:first-child {
+                background-image: none;
+                padding-left: 35px;
+            }
+        }
+
+
     }
 
     &__tab-title {
@@ -126,6 +164,10 @@
             opacity: 1;
             visibility: visible;
         }
+
+        @include break(to-mobile) {
+            padding: 110px 0 60px 0;
+        }
     }
 
     &__section-body {
@@ -136,6 +178,13 @@
         line-height: 1.62;
         color: #fff;
         z-index: 1;
+
+        @include break(to-mobile) {
+            width: 100%;
+            padding: 0 35px;
+            box-sizing: border-box;
+            font-size: 1em;
+        }
     }
 
     &__section-heading {
@@ -143,6 +192,11 @@
         text-transform: uppercase;
         font-size: 1.5rem;
         margin: 0;
+
+        @include break(to-mobile) {
+            font-size: 1.15em;
+            margin-bottom: 0.3em;
+        }
     }
 
     &__section-sub-heading {
@@ -152,6 +206,12 @@
         width: 75%;
         line-height: 1.3;
         margin-bottom: 1.2em;
+
+
+        @include break(to-mobile) {
+            font-size: 1.28em;
+        }
+
     }
 
     &__section-lower-heading {
@@ -159,6 +219,14 @@
         text-transform: uppercase;
         font-size: 1.5rem;
         margin: 0;
+
+
+        @include break(to-mobile) {
+            font-size: 1.15em;
+            margin-bottom: 0.3em;
+        }
+
+
     }
 
     &__pdf-button {
@@ -173,6 +241,13 @@
         text-decoration: none;
         text-transform: uppercase;
         color: $black;
+
+        @include break(to-mobile) {
+            height: 60px;
+            line-height: 60px;
+            font-size: 1.125em;
+            margin-top: 1em;
+        }
     }
 
     &__pdf-button-circle {
@@ -180,6 +255,11 @@
         margin: 0 0 0 1em;
         height: 41px;
         width: 41px;
+
+        @include break(to-mobile) {
+            height: 34px;
+            width: 34px;
+        }
     }
 
     &__pdf-button:hover &__pdf-button-circle {
