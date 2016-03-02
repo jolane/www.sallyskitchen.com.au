@@ -6,11 +6,19 @@
     margin: 0 auto;
     padding: 3.4em 0 0 0;
 
+    @include break(to-mobile) {
+        width: 100%;
+    }
+
     &__body {
         padding: 0 180px;
 
         & p {
             margin: 0 0 2.5em 0;
+        }
+
+        @include break(to-mobile) {
+            padding: 0 35px;
         }
 
     }
@@ -43,6 +51,10 @@
             vertical-align: middle;
             margin-right: 0.625em;
         }
+
+        @include break(to-mobile) {
+            font-size: 1.25em;
+        }
     }
 
 
@@ -55,6 +67,10 @@
 
         & span {
             border-bottom: 1px dashed #1A1A1A;
+        }
+
+        @include break(to-mobile) {
+            padding: 0 35px;
         }
     }
 

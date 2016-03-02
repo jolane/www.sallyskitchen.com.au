@@ -2,6 +2,10 @@
 
     @include box(1400, 790);
 
+    @include break(to-mobile) {
+        @include box(640, 730);
+    }
+
     &__inner {
         background-size: cover;
         background-position: center center;
@@ -33,6 +37,12 @@
         left: 80px;
         top: 70px;
         width: 18%;
+
+        @include break(to-mobile) {
+            top: 30px;
+            left: 25px;
+            width: 47%;
+        }
     }
 
     &__logo-icon {
@@ -42,28 +52,4 @@
     &__intro {
         z-index: 1;
     }
-
-    &__make-a-booking {
-        position: absolute;
-        top: 57px;
-        right: 80px;
-        z-index: 200;
-        color: #fff;
-        font-family: $medium-heading;
-        cursor: pointer;
-    }
-
-    &__make-a-booking-circle {
-        @extend .circle-icon;
-        height: 52px;
-        width: 52px;
-    }
-
-    &__make-a-booking-circle &__make-a-booking-icon {
-        @extend .circle-icon__icon;
-        fill: #fff;
-        padding: 14px;
-    }
-
-
 }

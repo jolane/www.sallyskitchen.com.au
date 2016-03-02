@@ -3,15 +3,18 @@
     @include box(1400, 695);
     overflow: hidden;
 
-
-    &__cell {
-        width: 33.3332%;
-        height: 100%;
-        float: left;
-        background-color: green;
-        display: table;
-        position: relative;
+    &:before {
+        @include break(to-mobile) {
+            display: none;
+        }
     }
+
+    & &__inner {
+        @include break(to-mobile) {
+            position: relative;
+        }
+    }
+
 
     &__cell-inner {
         display: table-cell;
@@ -25,6 +28,27 @@
         color: #fff;
         position: relative;
         transition: all 0.3s linear;
+
+        @include break(to-mobile) {
+            display: block;
+            width: 100%;
+            padding: 50px 35px;
+        }
+    }
+
+    &__cell {
+        width: 33.3332%;
+        height: 100%;
+        float: left;
+        background-color: green;
+        display: table;
+        position: relative;
+
+        @include break(to-mobile) {
+            width: 100%;
+            height: auto;
+            float: none;
+        }
     }
 
     &_cell:hover &__cell-inner {
@@ -33,6 +57,7 @@
 
     &__cell-action {
         background-color: #fff;
+        display: block;
         width: 100%;
         height: 85px;
         line-height: 85px;
@@ -43,10 +68,19 @@
         transition: all 0.3s linear;
         font-family: $bold-heading;
         font-size: 0.83em;
+
+        @include break(to-mobile) {
+            position: static;
+            font-size: 1em;
+        }
     }
 
     &__cell:hover &__cell-action {
         transform: translateY(-85px);
+
+        @include break(to-mobile) {
+            transform: none;
+        }
     }
 
 
@@ -56,6 +90,17 @@
         margin: 0 0 1.4em 0;
         font-family: $main-font;
         font-weight: normal;
+
+        @include break(to-mobile) {
+            margin-bottom: 0.4em;
+        }
+    }
+
+    &__cell-text {
+        @include break(to-mobile) {
+            margin: 0;
+            font-size: 1.35em;
+        }
     }
 
     &__cell-circle {

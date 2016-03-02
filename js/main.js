@@ -2,8 +2,16 @@ jQuery(document).ready(function($) {
     $('.menu__tab').click(function(event) {
 
         $(this).parent().find('.menu__tab').removeClass('is-active');
-
         $(this).addClass('is-active');
+
+        var thisIndex = $(this).index();
+
+        $('.menu__sections').removeClass('slide-0');
+        $('.menu__sections').removeClass('slide-1');
+        $('.menu__sections').removeClass('slide-2');
+
+        $('.menu__sections').addClass('slide-' + thisIndex);
+
     });
 });
 

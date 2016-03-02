@@ -26,6 +26,11 @@
         color: #fff;
         font-family: 'GT Walsheim Thin';
         font-weight: 200;
+
+        @include break(to-mobile) {
+            font-size: 4.06em;
+            line-height: 1.2;
+        }
     }
 
     &__is-text {

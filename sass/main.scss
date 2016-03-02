@@ -8,6 +8,7 @@
 
 
 // Layouts
+@import 'layout/body';
 @import 'layout/header';
 @import 'layout/text-block';
 @import 'layout/image-block';
@@ -16,3 +17,5 @@
 @import 'layout/contact-row';
 @import 'layout/intro';
 @import 'layout/where';
+
+@import 'components/make-a-booking';

@@ -79,11 +79,35 @@
     &__sections {
         position: relative;
         z-index: 0;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    &__sections-inner {
+        @include clearfix;
+        width: 300%;
+        transition: all 0.3s linear;
+        position: relative;
+
+        .slide-0 & {
+            left: 0;
+        }
+
+        .slide-1 & {
+            left: -100%;
+        }
+
+        .slide-2 & {
+            left: -200%;
+        }
     }
 
     &__section {
+        float: left;
         padding: 220px 0 100px 0;
         position: relative;
+        transition: all 0.3s linear;
+        width: 33.3332%;
 
         &:before {
             content: '';
@@ -95,6 +119,12 @@
             z-index: 0;
             top: 0;
             left: 0;
+        }
+
+        &.is-active {
+            position: relative;
+            opacity: 1;
+            visibility: visible;
         }
     }
 
@@ -152,7 +182,16 @@
         width: 41px;
     }
 
+    &__pdf-button:hover &__pdf-button-circle {
+        background-color: #ccc;
+    }
+
     &__pdf-button-icon {
         @extend .circle-icon__icon;
+        fill: $black;
+    }
+
+    &__pdf-button:hover &__pdf-button-icon {
+        fill: #fff;
     }
 }

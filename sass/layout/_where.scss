@@ -3,6 +3,10 @@
     &__map {
         margin-top: 90px;
         @include box(1400, 670);
+
+        @include break(to-mobile) {
+            @include box(650, 670);
+        }
     }
 
     &__map-inner {

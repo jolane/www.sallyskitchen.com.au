@@ -17,9 +17,17 @@
     }
 }
 
+@mixin clearfix {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
 
 // List Breakpoints
-$mobile: 320px;
+$mobile: 375px;
 $tablet: 768px;
 $desktop: 1224px;
 $wide: 1824px;
@@ -89,17 +97,19 @@ $wide: 1824px;
     margin-right: 6px;
     position: relative;
     vertical-align: middle;
+    transition: all 0.2s linear;
 }
 
 .circle-icon__icon {
-        position: absolute;
-        top: 0;
-        left: 0;
-        display: block;
-        height: 100%;
-        width: 100%;
-        box-sizing: border-box;
-        padding: 12px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    transition: all 0.2s linear;
 }
 
 
