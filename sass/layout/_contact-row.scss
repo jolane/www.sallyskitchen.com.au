@@ -37,8 +37,10 @@
 
     &__icon {
         @extend .circle-icon__icon;
-        padding: 8px;
-        fill: #666;
+        @include break(to-mobile) {
+            padding: 8px;
+            fill: #666;
+        }
     }
 
 
