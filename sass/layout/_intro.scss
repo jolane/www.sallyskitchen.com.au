@@ -1,42 +1,50 @@
 .intro {
 
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
 
 
-    &__table {
-        display: table;
-        height: 100%;
-        width: 100%;
-    }
+	&__table {
+		display: table;
+		height: 100%;
+		width: 100%;
+	}
 
-    &__cell {
-        display: table-cell;
-        height: 100%;
-        width: 100%;
-        vertical-align: middle;
-        text-align: center;
-    }
+	&__cell {
+		display: table-cell;
+		height: 100%;
+		width: 100%;
+		vertical-align: middle;
+		text-align: center;
+	}
 
-    &__text {
-        font-size: 4.75em;
-        color: #fff;
-        font-family: 'GT Walsheim Thin';
-        font-weight: 200;
+	&__text {
+		font-size: 4.75em;
+		color: #fff;
+		font-family: 'GT Walsheim Thin';
+		font-weight: 200;
 
-        @include break(to-mobile) {
-            font-size: 4.06em;
-            line-height: 1.2;
-        }
-    }
+		@include break(to-mobile) {
+			font-size: 4.06em;
+			line-height: 1.2;
+		}
+	}
 
-    &__is-text {
-        font-family: 'GT Walsheim Medium';
-        font-weight: 400;
-        border-bottom: 1px dashed #fff;
-    }
+	&__is-text {
+		font-family: 'GT Walsheim Medium';
+		font-weight: 400;
+		border-bottom: 1px dashed #fff;
+	}
+
+	&__word {
+		display: none;
+
+		&.is-active {
+			display: inline-block;
+		}
+	}
 
 }
