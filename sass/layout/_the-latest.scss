@@ -1,120 +1,122 @@
 .the-latest {
 
-    @include box(1400, 695);
-    overflow: hidden;
+	@include box(1400, 695);
+	overflow: hidden;
 
-    &:before {
-        @include break(to-mobile) {
-            display: none;
-        }
-    }
+	&:before {
+		@include break(to-mobile) {
+			display: none;
+		}
+	}
 
-    & &__inner {
-        @include break(to-mobile) {
-            position: relative;
-        }
-    }
-
-
-    &__cell-inner {
-        display: table-cell;
-        vertical-align: middle;
-        text-align: center;
-        font-family: $thin-heading;
-        font-size: 1.5em;
-        line-height: 1.12;
-        padding: 0 14%;
-        box-sizing: border-box;
-        color: #fff;
-        position: relative;
-        transition: all 0.3s linear;
-
-        @include break(to-mobile) {
-            display: block;
-            width: 100%;
-            padding: 50px 35px;
-        }
-    }
-
-    &__cell {
-        width: 33.3332%;
-        height: 100%;
-        float: left;
-        background-color: green;
-        display: table;
-        position: relative;
-
-        @include break(to-mobile) {
-            width: 100%;
-            height: auto;
-            float: none;
-        }
-    }
-
-    &_cell:hover &__cell-inner {
-        transform: translateY(-85px);
-    }
-
-    &__cell-action {
-        background-color: #fff;
-        display: block;
-        width: 100%;
-        height: 85px;
-        line-height: 85px;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        text-align: center;
-        transition: all 0.3s linear;
-        font-family: $bold-heading;
-        font-size: 0.83em;
-
-        @include break(to-mobile) {
-            position: static;
-            font-size: 1em;
-        }
-    }
-
-    &__cell:hover &__cell-action {
-        transform: translateY(-85px);
-
-        @include break(to-mobile) {
-            transform: none;
-        }
-    }
+	& &__inner {
+		@include break(to-mobile) {
+			position: relative;
+		}
+	}
 
 
-    &__cell-heading {
-        font-size: 1.5rem;
-        text-transform: uppercase;
-        margin: 0 0 1.4em 0;
-        font-family: $main-font;
-        font-weight: normal;
+	&__cell-inner {
+		display: table-cell;
+		vertical-align: middle;
+		text-align: center;
+		font-family: $thin-heading;
+		font-size: 1.5em;
+		line-height: 1.12;
+		padding: 0 14%;
+		box-sizing: border-box;
+		color: #fff;
+		position: relative;
+		transition: all 0.3s linear;
 
-        @include break(to-mobile) {
-            margin-bottom: 0.4em;
-        }
-    }
+		@include break(to-mobile) {
+			display: block;
+			width: 100%;
+			padding: 50px 35px;
+		}
+	}
 
-    &__cell-text {
-        @include break(to-mobile) {
-            margin: 0;
-            font-size: 1.35em;
-        }
-    }
+	&__cell {
+		width: 33.3332%;
+		height: 100%;
+		float: left;
+		background-color: green;
+		display: table;
+		position: relative;
+		background-size: cover;
+		background-position: center center;
 
-    &__cell-circle {
-        @extend .circle-icon;
-        height: 47px;
-        width: 47px;
-        margin-right: 15px;
-    }
+		@include break(to-mobile) {
+			width: 100%;
+			height: auto;
+			float: none;
+		}
+	}
 
-    &__cell-icon {
-        @extend .circle-icon__icon;
-        position: absolute;
-        fill: $black;
-        padding: 14px;
-    }
+	&_cell:hover &__cell-inner {
+		transform: translateY(-85px);
+	}
+
+	&__cell-action {
+		background-color: #fff;
+		display: block;
+		width: 100%;
+		height: 85px;
+		line-height: 85px;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		text-align: center;
+		transition: all 0.3s linear;
+		font-family: $bold-heading;
+		font-size: 0.83em;
+
+		@include break(to-mobile) {
+			position: static;
+			font-size: 1em;
+		}
+	}
+
+	&__cell:hover &__cell-action {
+		transform: translateY(-85px);
+
+		@include break(to-mobile) {
+			transform: none;
+		}
+	}
+
+
+	&__cell-heading {
+		font-size: 1.5rem;
+		text-transform: uppercase;
+		margin: 0 0 1.4em 0;
+		font-family: $main-font;
+		font-weight: normal;
+
+		@include break(to-mobile) {
+			margin-bottom: 0.4em;
+		}
+	}
+
+	&__cell-text {
+		@include break(to-mobile) {
+			margin: 0;
+			font-size: 1.35em;
+		}
+	}
+
+	&__cell-circle {
+		@extend .circle-icon;
+		height: 47px;
+		width: 47px;
+		margin-right: 15px;
+	}
+
+	&__cell-icon {
+		@extend .circle-icon__icon;
+		position: absolute;
+		fill: $black;
+		padding: 14px;
+	}
 
 }

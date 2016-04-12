@@ -6,7 +6,7 @@
 	color: #fff;
 	font-family: $medium-heading;
 	cursor: pointer;
-	display: block
+	display: block;
 
 	@include break(to-mobile) {
 		top: 30px;
