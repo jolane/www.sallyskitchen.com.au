@@ -18,6 +18,18 @@ jQuery(document).ready(function($) {
 	setTimeout(function() {
 		$('.header__zooing-image').addClass('is-zooming');
 	}, 1000);
+
+
+	$.post('/instagram.php', {}, function(data, textStatus, xhr) {
+		console.log(data);
+
+		$('#instagram-image').css({
+			'background-image': 'url(' + data.images.standard_resolution.url + ')'
+		});
+
+		$('#instagram-caption').html(data.caption.text);
+
+	}, 'JSON');
 });
 
 
