@@ -1,46 +1,47 @@
 .make-a-booking {
-    position: absolute;
-    top: 57px;
-    right: 80px;
-    z-index: 200;
-    color: #fff;
-    font-family: $medium-heading;
-    cursor: pointer;
+	position: absolute;
+	top: 57px;
+	right: 80px;
+	z-index: 200;
+	color: #fff;
+	font-family: $medium-heading;
+	cursor: pointer;
+	display: block
 
-    @include break(to-mobile) {
-        top: 30px;
-        right: 25px;
-        transform: translateY(-50%);
-    }
-
-
-    &__copy {
-        @include break(to-mobile) {
-            display: none;
-        }
-    }
-
-    &__circle {
-        @extend .circle-icon;
-        height: 52px;
-        width: 52px;
-        margin: 0 0 0 0.8em;
-        transition: all 0.3s linear;
-    }
-
-    &:hover &__circle {
-        background-color: #fff;
-    }
+	@include break(to-mobile) {
+		top: 30px;
+		right: 25px;
+		transform: translateY(-50%);
+	}
 
 
-    &__icon {
-        @extend .circle-icon__icon;
-        fill: #fff;
-        padding: 14px;
-    }
+	&__copy {
+		@include break(to-mobile) {
+			display: none;
+		}
+	}
 
-    &:hover &__icon {
-        fill: $black;
-    }
+	&__circle {
+		@extend .circle-icon;
+		height: 52px;
+		width: 52px;
+		margin: 0 0 0 0.8em;
+		transition: all 0.3s linear;
+	}
+
+	&:hover &__circle {
+		background-color: #fff;
+	}
+
+
+	&__icon {
+		@extend .circle-icon__icon;
+		fill: #fff;
+		padding: 14px;
+	}
+
+	&:hover &__icon {
+		fill: $black;
+	}
 
 }
