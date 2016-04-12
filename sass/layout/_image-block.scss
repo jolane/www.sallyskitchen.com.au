@@ -6,6 +6,10 @@
 		background-size: cover;
 		background-color: #ddd;
 		background-position: center center;
+
+		html.no-touch & {
+			background-attachment: fixed;
+		}
 	}
 
 }
