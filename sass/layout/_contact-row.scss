@@ -1,52 +1,52 @@
 .contact-row {
-    text-align: center;
+	text-align: center;
 
-    @include break(to-mobile) {
-        padding: 0 35px;
-        text-align: left;
-    }
+	@include break(to-mobile) {
+		padding: 0 35px;
+		text-align: left;
+	}
 
-    &__item {
-        display: inline-block;
-        height: 52px;
-        line-height: 52px;
-        vertical-align: middle;
-        margin: 0 22px;
-        font-family: $medium-heading;
-        cursor: pointer;
+	&__item {
+		display: inline-block;
+		height: 52px;
+		line-height: 52px;
+		vertical-align: middle;
+		margin: 0 22px;
+		font-family: $medium-heading;
+		cursor: pointer;
 
-        @include break(to-mobile) {
-            display: block;
-            margin: 0 0 0px 0;
-            font-size: 1.125em;
-        }
-    }
+		@include break(to-mobile) {
+			display: block;
+			margin: 0 0 0px 0;
+			font-size: 1.125em;
+		}
+	}
 
-    &__circle {
-        @extend .circle-icon;
+	&__circle {
+		@extend .circle-icon;
 
-        @include break(to-mobile) {
-            height: 37px;
-            width: 37px;
-        }
-    }
-    &__item:hover &__circle {
-        background-color: #000;
-    }
-
-
-    &__icon {
-        @extend .circle-icon__icon;
-        @include break(to-mobile) {
-            padding: 8px;
-            fill: #666;
-        }
-    }
+		@include break(to-mobile) {
+			height: 37px;
+			width: 37px;
+		}
+	}
+	&__item:hover &__circle {
+		background-color: #000;
+	}
 
 
-    &__item:hover &__icon {
-        fill: #fff;
-    }
+	&__icon {
+		@extend .circle-icon__icon;
+		@include break(to-mobile) {
+			padding: 8px;
+			fill: #666;
+		}
+	}
+
+
+	&__item:hover &__icon {
+		fill: #fff;
+	}
 
 
 }

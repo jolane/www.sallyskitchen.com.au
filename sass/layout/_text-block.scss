@@ -1,82 +1,82 @@
 
 .text-block {
 
-    width: 960px;
-    position: relative;
-    margin: 0 auto;
-    padding: 3.4em 0 0 0;
+	width: 960px;
+	position: relative;
+	margin: 0 auto;
+	padding: 3.4em 0 0 0;
 
-    @include break(to-mobile) {
-        width: 100%;
-    }
+	@include break(to-mobile) {
+		width: 100%;
+	}
 
-    &__body {
-        padding: 0 180px;
+	&__body {
+		padding: 0 180px;
 
-        & p {
-            margin: 0 0 2.5em 0;
-        }
+		& p {
+			margin: 0 0 2.5em 0;
+		}
 
-        @include break(to-mobile) {
-            padding: 0 35px;
-        }
+		@include break(to-mobile) {
+			padding: 0 35px;
+		}
 
-    }
-
-
-    &__heading {
-        text-transform: uppercase;
-        font-weight: normal;
-        text-align: center;
-        margin: 0 0 1.67em 0;
-
-        &:after {
-            content: '';
-            display: inline-block;
-            height: 3px;
-            width: 3px;
-            background-color: #000;
-            border-radius: 50%;
-            vertical-align: middle;
-            margin-left: 0.625em;
-        }
-
-        &:before {
-            content: '';
-            display: inline-block;
-            height: 3px;
-            width: 3px;
-            background-color: #000;
-            border-radius: 50%;
-            vertical-align: middle;
-            margin-right: 0.625em;
-        }
-
-        @include break(to-mobile) {
-            font-size: 1.25em;
-        }
-    }
+	}
 
 
-    &__callout {
+	&__heading {
+		text-transform: uppercase;
+		font-weight: normal;
+		text-align: center;
+		margin: 0 0 1.67em 0;
 
-        font-family: 'GT Walsheim Thin';
-        font-size: 2.25em;
-        line-height: 1.33;
-        padding: 0;
+		&:after {
+			content: '';
+			display: inline-block;
+			height: 3px;
+			width: 3px;
+			background-color: #000;
+			border-radius: 50%;
+			vertical-align: middle;
+			margin-left: 0.625em;
+		}
 
-        & span {
-            border-bottom: 1px dashed #1A1A1A;
-        }
+		&:before {
+			content: '';
+			display: inline-block;
+			height: 3px;
+			width: 3px;
+			background-color: #000;
+			border-radius: 50%;
+			vertical-align: middle;
+			margin-right: 0.625em;
+		}
 
-        @include break(to-mobile) {
-            font-size: 1.68em;
-            padding: 0 35px;
+		@include break(to-mobile) {
+			font-size: 1.25em;
+		}
+	}
 
-            & br {
-                display: none;
-            }
-        }
-    }
+
+	&__callout {
+
+		font-family: 'GT Walsheim Thin';
+		font-size: 2.25em;
+		line-height: 1.33;
+		padding: 0;
+
+		& span {
+			border-bottom: 1px dashed #1A1A1A;
+		}
+
+		@include break(to-mobile) {
+			font-size: 1.68em;
+			padding: 0 35px;
+
+			& br {
+				display: none;
+			}
+		}
+	}
 
 }

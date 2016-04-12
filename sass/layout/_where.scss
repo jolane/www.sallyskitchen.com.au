@@ -1,15 +1,15 @@
 .where {
 
-    &__map {
-        margin-top: 90px;
-        @include box(1400, 670);
+	&__map {
+		margin-top: 90px;
+		@include box(1400, 670);
 
-        @include break(to-mobile) {
-            @include box(650, 670);
-        }
-    }
+		@include break(to-mobile) {
+			@include box(650, 670);
+		}
+	}
 
-    &__map-inner {
-        background-color: #ccc;
-    }
+	&__map-inner {
+		background-color: #ccc;
+	}
 }
