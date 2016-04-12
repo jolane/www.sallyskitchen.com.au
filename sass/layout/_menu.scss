@@ -242,6 +242,7 @@
 		text-decoration: none;
 		text-transform: uppercase;
 		color: $black;
+		margin-top: 1.2em;
 
 		@include break(to-mobile) {
 			height: 60px;
