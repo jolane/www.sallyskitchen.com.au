@@ -21,13 +21,18 @@ jQuery(document).ready(function($) {
 
 
 	$.post('/instagram.php', {}, function(data, textStatus, xhr) {
-		console.log(data);
 
+		// populate first instagram item
 		$('#instagram-image').css({
-			'background-image': 'url(' + data.images.standard_resolution.url + ')'
+			'background-image': 'url(' + data[0].images.standard_resolution.url + ')'
 		});
+		$('#instagram-caption').html(data[0].caption.text);
 
-		$('#instagram-caption').html(data.caption.text);
+		// populate other
+		$('.instagram__item').each(function(index, el) {
+			$(this).css('background-image', 'url(' + data[index].images.standard_resolution.url + ')');
+			$(this).children('.instagram__item-copy').html(data[index].caption.text);
+		});
 
 	}, 'JSON');
 });

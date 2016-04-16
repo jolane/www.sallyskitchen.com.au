@@ -1,115 +1,115 @@
 @mixin box($width, $height) {
 
-    position: relative;
+	position: relative;
 
-    &:before {
-        content: '';
-        display: block;
-        padding-bottom: percentage($height / $width);
-    }
+	&:before {
+		content: '';
+		display: block;
+		padding-bottom: percentage($height / $width);
+	}
 
-    & > *:first-child {
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        top: 0;
-        left: 0;
-    }
+	& > *:first-child {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		top: 0;
+		left: 0;
+	}
 }
 
 @mixin clearfix {
-    &:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
 }
 
 
 // List Breakpoints
-$mobile: 375px;
+$mobile: 960px;
 $tablet: 768px;
 $desktop: 1224px;
 $wide: 1824px;
 
 @mixin break($media) {
-    @if $media == to-mobile {
-        @media only screen and (max-width : $mobile) {
-            @content;
-        }
-    } @else if $media == from-mobile {
-        @media only screen and (min-width : $mobile - 1) {
-            @content;
-        }
-    } @else if $media == mobile {
-        @media only screen and (max-width : $mobile) {
-            @content;
-        }
-    } @else if $media == to-tablet {
-        @media only screen and (max-width : $tablet) {
-            @content;
-        }
-    } @else if $media == to-tablet {
-        @media only screen and (min-width : $tablet - 1) {
-            @content;
-        }
-    } @else if $media == tablet {
-        @media only screen and (min-width: $mobile + 1) and (max-width : $tablet) {
-            @content;
-        }
-    } @else if $media == to-desktop {
-        @media only screen and (max-width : $desktop) {
-            @content;
-        }
-    } @else if $media == from-desktop {
-        @media only screen and (min-width : $desktop - 1) {
-            @content;
-        }
-    } @else if $media == wide {
-        @media only screen and (min-width : $wide - 1) {
-            @content;
-        }
-    }
+	@if $media == to-mobile {
+		@media only screen and (max-width : $mobile) {
+			@content;
+		}
+	} @else if $media == from-mobile {
+		@media only screen and (min-width : $mobile - 1) {
+			@content;
+		}
+	} @else if $media == mobile {
+		@media only screen and (max-width : $mobile) {
+			@content;
+		}
+	} @else if $media == to-tablet {
+		@media only screen and (max-width : $tablet) {
+			@content;
+		}
+	} @else if $media == to-tablet {
+		@media only screen and (min-width : $tablet - 1) {
+			@content;
+		}
+	} @else if $media == tablet {
+		@media only screen and (min-width: $mobile + 1) and (max-width : $tablet) {
+			@content;
+		}
+	} @else if $media == to-desktop {
+		@media only screen and (max-width : $desktop) {
+			@content;
+		}
+	} @else if $media == from-desktop {
+		@media only screen and (min-width : $desktop - 1) {
+			@content;
+		}
+	} @else if $media == wide {
+		@media only screen and (min-width : $wide - 1) {
+			@content;
+		}
+	}
 }
 
 
 
 .callout-text {
-    font-family: 'GT Walsheim Thin';
-    font-size: 2.25em;
-    line-height: 1.33;
-    padding: 0;
+	font-family: 'GT Walsheim Thin';
+	font-size: 2.25em;
+	line-height: 1.33;
+	padding: 0;
 
-    & span {
-        border-bottom: 1px dashed #1A1A1A;
-    }
+	& span {
+		border-bottom: 1px dashed #1A1A1A;
+	}
 
 }
 
 
 .circle-icon {
-    height: 52px;
-    width: 52px;
-    box-sizing: border-box;
-    border-radius: 50%;
-    display: inline-block;
-    border: 1px solid #ccc;
-    margin-right: 6px;
-    position: relative;
-    vertical-align: middle;
-    transition: all 0.2s linear;
+	height: 52px;
+	width: 52px;
+	box-sizing: border-box;
+	border-radius: 50%;
+	display: inline-block;
+	border: 1px solid #ccc;
+	margin-right: 6px;
+	position: relative;
+	vertical-align: middle;
+	transition: all 0.2s linear;
 }
 
 .circle-icon__icon {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    height: 100%;
-    width: 100%;
-    box-sizing: border-box;
-    padding: 12px;
-    transition: all 0.2s linear;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	height: 100%;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 12px;
+	transition: all 0.2s linear;
 }
 
 

@@ -7,6 +7,12 @@
 		@include box(1, 1);
 		float: left;
 		width: 33.3332%;
+		background-size: cover;
+		background-position: center center;
+
+		@include break(to-mobile) {
+			width: 50%;
+		}
 	}
 
 	&__item-copy {
@@ -25,6 +31,7 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
+		overflow: hidden;
 
 		&:hover {
 			opacity: 1;
