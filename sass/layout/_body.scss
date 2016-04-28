@@ -10,3 +10,13 @@ body {
 		line-height: 1.5;
 	}
 }
+
+
+.is-faded {
+	opacity: 0;
+	transition: all 0.5s linear 0.2s;
+
+	&-in {
+		opacity: 1;
+	}
+}

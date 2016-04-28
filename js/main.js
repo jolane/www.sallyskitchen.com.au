@@ -35,6 +35,64 @@ jQuery(document).ready(function($) {
 		});
 
 	}, 'JSON');
+
+
+	// fade in block
+	if(!$('html').hasClass('touch')) {
+		fadeInBlocks();
+		$(window).scroll(function(event) {
+			fadeInBlocks();
+		});
+	} else {
+		$('.is-faded').each(function(index, el) {
+			showImage($(this));
+		});
+	}
+	function fadeInBlocks() {
+		var winH = $(window).height();
+		var top = $(window).scrollTop();
+
+		var fadePoint = winH + top;
+
+		$('.is-faded').each(function(index, el) {
+			var itemPoint = $(this).offset().top + ($(this).height() / 4);
+			if(itemPoint <= fadePoint) {
+				$(this).addClass('is-faded-in');
+			}
+		});
+	}
+
+	function fadeInBlocks() {
+		$('.is-faded').each(function(index, el) {
+			if(imageInView($(this))) {
+				showImage($(this));
+			}
+		});
+	}
+
+	function imageInView(el) {
+		var winH = $(window).height();
+		var top = $(window).scrollTop();
+		var fadePoint = winH + top;
+
+		var itemPoint = $(el).offset().top + ($(el).height() / 4);
+		if(itemPoint <= fadePoint) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
+	function showImage(el) {
+		var $box = $(el);
+
+		$(el).waitForImages(function() {
+			$(this).addClass('is-faded-in');
+		});
+	}
+
+
+
 });
 
 
