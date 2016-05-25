@@ -69,6 +69,8 @@
 		transition: all 0.3s linear;
 		font-family: $bold-heading;
 		font-size: 0.83em;
+		color: inherit;
+		text-decoration: none;
 
 		@include break(to-mobile) {
 			position: static;
