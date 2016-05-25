@@ -28,6 +28,7 @@
 		color: #fff;
 		position: relative;
 		transition: all 0.3s linear;
+		z-index: 2;
 
 		@include break(to-mobile) {
 			display: block;
@@ -44,6 +45,21 @@
 		position: relative;
 		background-size: cover;
 		background-position: center center;
+
+		&:after {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			background-color: rgba(0, 0, 0, 0.35);
+			transition: all 0.3s linear;
+		}
+		&:hover:after {
+			background-color: rgba(0, 0, 0, 0.55);
+		}
 
 		@include break(to-mobile) {
 			width: 100%;
@@ -71,6 +87,7 @@
 		font-size: 0.83em;
 		color: inherit;
 		text-decoration: none;
+		z-index: 3;
 
 		@include break(to-mobile) {
 			position: static;
