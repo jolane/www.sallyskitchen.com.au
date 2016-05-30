@@ -7,7 +7,7 @@ jQuery(document).ready(function($) {
 	var current = 0;
 	function myCallback() {
 		current++;
-		var index = current%3;
+		var index = current%words.length;
 		console.log(index);
 		if($('.intro__is-text').hasClass('flip')) {
 			$('.intro__is-front').html(words[index]);

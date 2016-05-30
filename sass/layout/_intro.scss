@@ -27,6 +27,7 @@
 		font-family: 'GT Walsheim Thin';
 		font-weight: 200;
 		height: 1em;
+		line-height: 1em;
 
 		@include break(to-mobile) {
 			font-size: 4.06em;
@@ -46,6 +47,7 @@
 		display: inline-block;
 		perspective: 1000px;
 		height: 1em;
+		line-height: 1em;
 		width: 4em;
 		transition: 0.6s;
 		transform-style: preserve-3d;
