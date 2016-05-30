@@ -1,4 +1,26 @@
 jQuery(document).ready(function($) {
+	// switch terms
+	var intervalID = window.setInterval(myCallback, 6000);
+
+
+	var words = ['cooking', 'laughing'];
+	var current = 0;
+	function myCallback() {
+		current++;
+		var index = current%3;
+		console.log(index);
+		if($('.intro__is-text').hasClass('flip')) {
+			$('.intro__is-front').html(words[index]);
+		} else {
+			$('.intro__is-back').html(words[index]);
+		}
+		$('.intro__is-text').toggleClass('flip');
+	}
+
+
+
+
+
 	$('.menu__tab').click(function(event) {
 
 		$(this).parent().find('.menu__tab').removeClass('is-active');

@@ -26,6 +26,7 @@
 		color: #fff;
 		font-family: 'GT Walsheim Thin';
 		font-weight: 200;
+		height: 1em;
 
 		@include break(to-mobile) {
 			font-size: 4.06em;
@@ -33,11 +34,49 @@
 		}
 	}
 
+	&__spacer {
+		opacity: 0;
+	}
+
 	&__is-text {
 		font-family: 'GT Walsheim Medium';
 		font-weight: 400;
+		line-height: 1;
+		position: relative;
+		display: inline-block;
+		perspective: 1000px;
+		height: 1em;
+		width: 4em;
+		transition: 0.6s;
+		transform-style: preserve-3d;
+
+		&.flip {
+			transform: rotateX(180deg);
+		}
+	}
+
+	&__is-front {
+		position: absolute;
+		top: 0;
+		left: 0;
+		backface-visibility: hidden;
+		height: 1em;
+		z-index: 2;
+		transform: rotateX(0deg);
 		border-bottom: 1px dashed #fff;
 	}
+
+	&__is-back {
+		position: absolute;
+		top: 0;
+		left: 0;
+		backface-visibility: hidden;
+		height: 1em;
+		z-index: 1;
+		transform: rotateX(180deg);
+		border-bottom: 1px dashed #fff;
+	}
+
 
 	&__word {
 		display: none;
