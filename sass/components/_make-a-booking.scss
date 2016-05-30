@@ -9,9 +9,8 @@
 	display: block;
 
 	@include break(to-mobile) {
-		top: 30px;
+		top: 15px;
 		right: 25px;
-		transform: translateY(-50%);
 	}
 
 

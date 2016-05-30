@@ -56,6 +56,11 @@
 			width: 100%;
 			background-color: rgba(0, 0, 0, 0.35);
 			transition: all 0.3s linear;
+
+			@include break(to-mobile) {
+				height: calc(100% - 85px);
+			}
+
 		}
 		&:hover:after {
 			background-color: rgba(0, 0, 0, 0.55);
