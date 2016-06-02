@@ -8,13 +8,14 @@ $instagramID = 472818268;
 
 
 $file = "https://api.instagram.com/v1/users/" . $instagramID . "/media/recent?access_token=" . $instagramAccessKey;
-
+echo $file;
 
 $content = file_get_contents($file);
+echo $content;
 
 $array = json_decode($content);
 
 $grams = $array->data;
 
-echo json_encode($grams);
+//echo json_encode($grams);
 
