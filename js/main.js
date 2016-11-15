@@ -8,7 +8,6 @@ jQuery(document).ready(function($) {
 	function myCallback() {
 		current++;
 		var index = current%words.length;
-		console.log(index);
 		if($('.intro__is-text').hasClass('flip')) {
 			$('.intro__is-front').html(words[index]);
 		} else {
@@ -42,21 +41,21 @@ jQuery(document).ready(function($) {
 	}, 1000);
 
 
-	$.post('/instagram.php', {}, function(data, textStatus, xhr) {
+	// $.post('/instagram.php', {}, function(data, textStatus, xhr) {
 
-		// populate first instagram item
-		$('#instagram-image').css({
-			'background-image': 'url(' + data[0].images.standard_resolution.url + ')'
-		});
-		$('#instagram-caption').html(data[0].caption.text);
+	// 	// populate first instagram item
+	// 	$('#instagram-image').css({
+	// 		'background-image': 'url(' + data[0].images.standard_resolution.url + ')'
+	// 	});
+	// 	$('#instagram-caption').html(data[0].caption.text);
 
-		// populate other
-		$('.instagram__item').each(function(index, el) {
-			$(this).css('background-image', 'url(' + data[index].images.standard_resolution.url + ')');
-			$(this).children('.instagram__item-copy').html(data[index].caption.text);
-		});
+	// 	// populate other
+	// 	$('.instagram__item').each(function(index, el) {
+	// 		$(this).css('background-image', 'url(' + data[index].images.standard_resolution.url + ')');
+	// 		$(this).children('.instagram__item-copy').html(data[index].caption.text);
+	// 	});
 
-	}, 'JSON');
+	// }, 'JSON');
 
 
 	// fade in block
@@ -146,6 +145,7 @@ function initMap() {
 	});
 
 	// add map styles
-	var styles = [{"stylers":[{"saturation":-100},{"gamma":0.8},{"lightness":4},{"visibility":"on"}]},{"featureType":"landscape.natural","stylers":[{"visibility":"on"},{"color":"#5dff00"},{"gamma":4.97},{"lightness":-5},{"saturation":100}]}]
+	var styles = [{"featureType":"administrative","elementType":"all","stylers":[{"saturation":"-100"}]},{"featureType":"administrative.province","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"landscape","elementType":"all","stylers":[{"saturation":-100},{"lightness":65},{"visibility":"on"}]},{"featureType":"poi","elementType":"all","stylers":[{"saturation":-100},{"lightness":"50"},{"visibility":"simplified"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":"-100"}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"all","stylers":[{"lightness":"30"}]},{"featureType":"road.local","elementType":"all","stylers":[{"lightness":"40"}]},{"featureType":"transit","elementType":"all","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"water","elementType":"geometry","stylers":[{"hue":"#ffff00"},{"lightness":-25},{"saturation":-97}]},{"featureType":"water","elementType":"labels","stylers":[{"lightness":-25},{"saturation":-100}]}]
 	map.setOptions({styles: styles});
 }
+
