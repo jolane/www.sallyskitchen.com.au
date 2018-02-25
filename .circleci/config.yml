@@ -4,7 +4,7 @@
 #
 version: 2
 jobs:
-  build:
+  build-job:
     docker:
       # specify the version you desire here
       - image: circleci/node:7.10
@@ -14,7 +14,7 @@ jobs:
       # documented at https://circleci.com/docs/2.0/circleci-images/
       # - image: circleci/mongo:3.4.4
 
-    working_directory: ~/repo
+    working_directory: ~/
 
     steps:
       - checkout
@@ -33,8 +33,20 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
         
-  deploy:
+  deploy-job:
     prod:
       branch: master
       commands:
         - aws s3 sync . s3://www.sallyskitchen.com.au --delete --acl public-read
+
+workflows:
+  version: 2
+  build-deploy:
+    jobs:
+      - build-job
+      - deploy-job:
+          requires:
+            - build-job
+          filters:
+            branches:
+              only: master
