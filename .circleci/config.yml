@@ -34,7 +34,7 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
   deploy-job:
     docker:
-      - image: circleci/node:7.10
+      - image: node:6.10
     working_directory: .
     steps:
       - run:
