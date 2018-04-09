@@ -1,5 +1,6 @@
 <!doctype html>
 <html class="no-js" lang="">
+
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -19,343 +20,352 @@
 		var svgsLoaded = false;
 		ajax.open("GET", "/img/icons.svg", true);
 		ajax.resonseType = "document";
-		ajax.onload = function(e) {
+		ajax.onload = function (e) {
 			var iconsEl = document.getElementById('icons');
 			iconsEl.insertBefore(ajax.responseXML.documentElement, iconsEl.childNodes[0]);
 			svgsLoaded = true;
 		}
 		ajax.send();
+
 	</script>
 </head>
+
 <body>
-		<!--[if lte IE 9]>
+	<!--[if lte IE 9]>
 			<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 			<![endif]-->
-			<div id="icons" style="height:0;width:0px;visibility:hidden;position:absolute;"></div>
+	<div id="icons" style="height:0;width:0px;visibility:hidden;position:absolute;"></div>
 
-			<header class="header">
-				<div class="header__inner">
-					<h1 class="header__logo">
-						<svg class="icon header__logo-icon">
-							<use xlink:href="#sallys-kitchen-logo"></use>
+	<header class="header">
+		<div class="header__inner">
+			<h1 class="header__logo">
+				<svg class="icon header__logo-icon">
+					<use xlink:href="#sallys-kitchen-logo"></use>
+				</svg>
+			</h1>
+			<a href="https://www.dimmi.com.au/make-booking/sallys-kitchen-melbourne?mode=Widget" target="_blank" rel="nofollow" class="header__make-a-booking make-a-booking dimmi-button">
+				<!-- <a href="mailto:sally@sallyskitchen.com.au?subject=Booking%20Enquiry" target="_blank" class="header__make-a-booking make-a-booking"> -->
+				<span class="make-a-booking__copy">Make a booking</span>
+				<span class="make-a-booking__circle">
+					<svg class="icon make-a-booking__icon">
+						<use xlink:href="#icon-calendar"></use>
+					</svg>
+				</span>
+			</a>
+			<script src="https://www.dimmi.com.au/embed/button-script?restaurantId=33472"></script>
+			<div class="header__intro intro">
+				<div class="intro__table">
+					<div class="intro__cell">
+						<h2 class="intro__text">
+							Sally is
+							<span class="intro__is-text">
+								<span class="intro__spacer">test </span>
+								<span class="intro__is-front">
+									cooking
+								</span>
+								<span class="intro__is-back">
+									laughing
+								</span>
+							</span>
+						</h2>
+
+					</div>
+				</div>
+			</div>
+			<div class="header__zooing-image"></div>
+		</div>
+	</header>
+
+
+	<section>
+		<div class="text-block">
+
+			<h4 class="text-block__heading">About Sally</h4>
+			<div class="text-block__body">
+				<p>
+					Sally fell passionately in love with food in her mother’s cozy kitchen. Now she has her own kitchen – a friendly place to
+					enjoy delicious, traditional recipes and good company around the table.
+				</p>
+			</div>
+			<h5 class="text-block__callout">
+				<span>Sally’s Kitchen serves deliciously simple,</span>
+				<br>
+				<span>modern food to be enjoyed with fine</span>
+				<br>
+				<span>wine and great company.</span>
+			</h5>
+			<div class="text-block__body">
+				<p>
+					Sally’s food is fresh, flavourful and made with love. Using seasonal produce, her eclectic menu features anything and everything
+					that takes her fancy. Simple dishes are created with care, integrity and quality ingredients. This is feel good food,
+					just like Sally’s mother made.
+				</p>
+				<br>
+				<br>
+			</div>
+
+		</div>
+	</section>
+
+	<section>
+		<div class="image-block">
+			<div class="image-block__inner" style="background-image: url(img/full1.jpg);"></div>
+		</div>
+		<div class="image-block">
+			<div class="image-block__inner" style="background-image: url(img/full2.jpg);"></div>
+		</div>
+		<div class="image-block">
+			<div class="image-block__inner" style="background-image: url(img/full3.jpg);"></div>
+		</div>
+		<div class="image-block">
+			<div class="image-block__inner" style="background-image: url(img/full4.jpg);"></div>
+		</div>
+	</section>
+
+
+	<section>
+		<div class="text-block">
+			<h4 class="text-block__heading">THE KITCHEN</h4>
+			<div class="text-block__body">
+				<p>
+					You’ll find Sally in the kitchen or chatting to guests most days. Take the time to sit and sample what’s cooking. It’s that
+					type of local – where the people love cooking and know just how you like your coffee.
+				</p>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="text-block">
+			<h4 class="text-block__heading">WHAT’S COOKING</h4>
+			<div class="text-block__body">
+				<p>
+					Always fresh and local, here’s a selection of a few things we are dishing out at the moment. Come in and check out the full
+					menu.
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="instagram" style="display: none;">
+
+		<div class="instagram__item is-faded">
+			<div class="instagram__item-copy">
+				1Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			</div>
+		</div>
+		<div class="instagram__item is-faded">
+			<div class="instagram__item-copy">
+				2Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			</div>
+		</div>
+		<div class="instagram__item is-faded">
+			<div class="instagram__item-copy">
+				3Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			</div>
+		</div>
+		<div class="instagram__item is-faded">
+			<div class="instagram__item-copy">
+				4Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			</div>
+		</div>
+		<div class="instagram__item is-faded">
+			<div class="instagram__item-copy">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			</div>
+		</div>
+		<div class="instagram__item is-faded">
+			<div class="instagram__item-copy">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			</div>
+		</div>
+		<div class="instagram__item is-faded">
+			<div class="instagram__item-copy">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			</div>
+		</div>
+		<div class="instagram__item is-faded">
+			<div class="instagram__item-copy">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			</div>
+		</div>
+		<div class="instagram__item is-faded">
+			<div class="instagram__item-copy">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			</div>
+		</div>
+
+
+	</section>
+
+
+
+	<section class="functions">
+		<div class="text-block">
+			<h4 class="text-block__heading">
+				Functions
+			</h4>
+			<div class="text-block__body">
+				<p>
+					Sally's Kitchen is perfect for CBD functions with the option of sit down meals or canapés matched with carefully selected
+					local and international wines.
+				</p>
+			</div>
+
+			<h5 class="text-block__callout">
+				<span>Sally and her crew are here to help you</span>
+				<br>
+				<span>throw a special party, host a business</span>
+				<br>
+				<span>lunch or grab a bite before a show.</span>
+			</h5>
+			<div class="contact-row">
+				<a href="mailto:orders@sallyskitchen.com.au" class="contact-row__item">
+					<span class="contact-row__circle">
+						<svg class="icon contact-row__icon">
+							<use xlink:href="#icon-letter"></use>
 						</svg>
-					</h1>
-					<a href="https://www.dimmi.com.au/make-booking/sallys-kitchen-melbourne?mode=Widget" target="_blank" rel="nofollow" class="header__make-a-booking make-a-booking dimmi-button">
-					<!-- <a href="mailto:sally@sallyskitchen.com.au?subject=Booking%20Enquiry" target="_blank" class="header__make-a-booking make-a-booking"> -->
-						<span class="make-a-booking__copy">Make a booking</span>
-						<span class="make-a-booking__circle">
-							<svg class="icon make-a-booking__icon">
-								<use xlink:href="#icon-calendar"></use>
+					</span>
+					Email Sally
+				</a>
+				<a class="contact-row__item">
+					<span class="contact-row__circle">
+						<svg class="icon contact-row__icon">
+							<use xlink:href="#icon-phone"></use>
+						</svg>
+					</span>
+					(03) 9650 9222
+				</a>
+			</div>
+			<!-- contact-row -->
+		</div>
+		<!-- text-block -->
+
+
+
+	</section>
+	<section class="latest">
+		<div class="text-block">
+			<h4 class="text-block__heading">
+				The Latest
+			</h4>
+		</div>
+		<div class="the-latest">
+			<div class="the-latest__inner">
+				<div class="the-latest__cell" id="instagram-image" style="background-image: url(img/instagram.jpg);">
+					<div class="the-latest__cell-inner">
+						<h6 class="the-latest__cell-heading">From Instragram</h6>
+						<p class="the-latest__cell-text" id="instagram-caption">
+							Great food everyday with a few laughs.
+						</p>
+					</div>
+
+					<a href="https://www.instagram.com/sallyskitchen_melb/" target="_blank" class="the-latest__cell-action">
+						<span class="the-latest__cell-circle">
+							<svg class="icon the-latest__cell-icon">
+								<use xlink:href="#icon-instagram"></use>
 							</svg>
 						</span>
+						FOLLOW ON INSTAGRAM
 					</a>
-					<script src="https://www.dimmi.com.au/embed/button-script?restaurantId=33472"></script>
-					<div class="header__intro intro">
-						<div class="intro__table">
-							<div class="intro__cell">
-								<h2 class="intro__text">
-									Sally is
-									<span class="intro__is-text">
-										<span class="intro__spacer">test </span>
-										<span class="intro__is-front">
-											cooking
-										</span>
-										<span class="intro__is-back">
-											laughing
-										</span>
-									</span>
-								</h2>
-
-							</div>
-						</div>
-					</div>
-					<div class="header__zooing-image"></div>
 				</div>
-			</header>
-
-
-			<section>
-				<div class="text-block">
-
-					<h4 class="text-block__heading">About Sally</h4>
-					<div class="text-block__body">
-						<p>
-							Sally fell passionately in love with food in her mother’s cozy kitchen. Now she has her own kitchen – a friendly place to enjoy delicious, traditional recipes and good company around the table.
-						</p>
-					</div>
-					<h5 class="text-block__callout">
-						<span>Sally’s Kitchen serves deliciously simple,</span><br>
-						<span>modern food to be enjoyed with fine</span><br>
-						<span>wine and great company.</span>
-					</h5>
-					<div class="text-block__body">
-						<p>
-							Sally’s food is fresh, flavourful and made with love. Using seasonal produce, her eclectic menu features anything and everything that takes her fancy. Simple dishes are created with care, integrity and quality ingredients. This is feel good food, just like Sally’s mother made.
-						</p>
-						<br><br>
-					</div>
-
-				</div>
-			</section>
-
-			<section>
-				<div class="image-block">
-					<div class="image-block__inner" style="background-image: url(img/full1.jpg);"></div>
-				</div>
-				<div class="image-block">
-					<div class="image-block__inner" style="background-image: url(img/full2.jpg);"></div>
-				</div>
-				<div class="image-block">
-					<div class="image-block__inner" style="background-image: url(img/full3.jpg);"></div>
-				</div>
-				<div class="image-block">
-					<div class="image-block__inner" style="background-image: url(img/full4.jpg);"></div>
-				</div>
-			</section>
-
-
-			<section>
-				<div class="text-block">
-					<h4 class="text-block__heading">THE KITCHEN</h4>
-					<div class="text-block__body">
-						<p>
-							You’ll find Sally in the kitchen or chatting to guests most days. Take the time to sit and sample what’s cooking. It’s that type of local – where the people love cooking and know just how you like your coffee.
-						</p>
-					</div>
-				</div>
-			</section>
-			<section>
-				<div class="text-block">
-					<h4 class="text-block__heading">WHAT’S COOKING</h4>
-					<div class="text-block__body">
-						<p>
-							Always fresh and local, here’s a selection of a few things we are dishing out at the moment. Come in and check out the full menu.
-						</p>
-					</div>
-				</div>
-			</section>
-
-			<section class="instagram" style="display: none;">
-
-				<div class="instagram__item is-faded">
-					<div class="instagram__item-copy">
-						1Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					</div>
-				</div>
-				<div class="instagram__item is-faded">
-					<div class="instagram__item-copy">
-						2Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					</div>
-				</div>
-				<div class="instagram__item is-faded">
-					<div class="instagram__item-copy">
-						3Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					</div>
-				</div>
-				<div class="instagram__item is-faded">
-					<div class="instagram__item-copy">
-						4Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					</div>
-				</div>
-				<div class="instagram__item is-faded">
-					<div class="instagram__item-copy">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					</div>
-				</div>
-				<div class="instagram__item is-faded">
-					<div class="instagram__item-copy">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					</div>
-				</div>
-				<div class="instagram__item is-faded">
-					<div class="instagram__item-copy">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					</div>
-				</div>
-				<div class="instagram__item is-faded">
-					<div class="instagram__item-copy">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					</div>
-				</div>
-				<div class="instagram__item is-faded">
-					<div class="instagram__item-copy">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					</div>
-				</div>
-
-
-			</section>
-
-
-
-			<section class="functions">
-				<div class="text-block">
-					<h4 class="text-block__heading">
-						Functions
-					</h4>
-					<div class="text-block__body">
-						<p>
-							Sally's Kitchen is perfect for CBD functions with the option of sit down meals or canapés matched with carefully selected local and international wines.
+				<div class="the-latest__cell" style="background-image: url(img/facebook.jpg);">
+					<div class="the-latest__cell-inner">
+						<h6 class="the-latest__cell-heading">From Facebook</h6>
+						<p class="the-latest__cell-text">
+							Stop by, feel welcome, eat well.
 						</p>
 					</div>
 
-					<h5 class="text-block__callout">
-						<span>Sally and her crew are here to help you</span><br>
-						<span>throw a special party, host a business</span><br>
-						<span>lunch or grab a bite before a show.</span>
-					</h5>
-					<div class="contact-row">
-						<a href="mailto:orders@sallyskitchen.com.au" class="contact-row__item">
-							<span class="contact-row__circle">
-								<svg class="icon contact-row__icon">
-									<use xlink:href="#icon-letter"></use>
-								</svg>
-							</span>
-							Email Sally
-						</a>
-						<a class="contact-row__item">
-							<span class="contact-row__circle">
-								<svg class="icon contact-row__icon">
-									<use xlink:href="#icon-phone"></use>
-								</svg>
-							</span>
-							(03) 9650 9222
-						</a>
-					</div><!-- contact-row -->
-				</div><!-- text-block -->
+					<a href="https://www.facebook.com/sallys.kitchen/" target="_blank" class="the-latest__cell-action">
+						<span class="the-latest__cell-circle">
+							<svg class="icon the-latest__cell-icon">
+								<use xlink:href="#icon-facebook"></use>
+							</svg>
+						</span>
+						LIKE US ON FACEBOOK
+					</a>
 
-
-
-			</section>
-			<section class="latest">
-				<div class="text-block">
-					<h4 class="text-block__heading">
-						The Latest
-					</h4>
 				</div>
-				<div class="the-latest">
-					<div class="the-latest__inner">
-						<div class="the-latest__cell" id="instagram-image" style="background-image: url(img/instagram.jpg);">
-							<div class="the-latest__cell-inner">
-								<h6 class="the-latest__cell-heading">From Instragram</h6>
-								<p class="the-latest__cell-text" id="instagram-caption">
-									Great food everyday with a few laughs.
-								</p>
-							</div>
-
-							<a href="https://www.instagram.com/sallyskitchen_melb/" target="_blank" class="the-latest__cell-action">
-								<span class="the-latest__cell-circle">
-									<svg class="icon the-latest__cell-icon">
-										<use xlink:href="#icon-instagram"></use>
-									</svg>
-								</span>
-								FOLLOW ON INSTAGRAM
-							</a>
-						</div>
-						<div class="the-latest__cell" style="background-image: url(img/facebook.jpg);">
-							<div class="the-latest__cell-inner">
-								<h6 class="the-latest__cell-heading">From Facebook</h6>
-								<p class="the-latest__cell-text">
-									Stop by, feel welcome, eat well.
-								</p>
-							</div>
-
-							<a href="https://www.facebook.com/sallys.kitchen/" target="_blank" class="the-latest__cell-action">
-								<span class="the-latest__cell-circle">
-									<svg class="icon the-latest__cell-icon">
-										<use xlink:href="#icon-facebook"></use>
-									</svg>
-								</span>
-								LIKE US ON FACEBOOK
-							</a>
-
-						</div>
-						<div class="the-latest__cell" style="background-image: url(img/events.jpg);">
-							<div class="the-latest__cell-inner">
-								<h6 class="the-latest__cell-heading">Upcoming events</h6>
-								<p class="the-latest__cell-text">
-									Sally is celebrating 8 years on July 13th
-								</p>
-							</div>
-
-							<a href="https://www.facebook.com/sallys.kitchen/events" target="_blank" class="the-latest__cell-action">
-								<span class="the-latest__cell-circle">
-									<svg class="icon the-latest__cell-icon">
-										<use xlink:href="#icon-facebook"></use>
-									</svg>
-								</span>
-								RSVP ON FACEBOOK
-							</a>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="where">
-				<div class="text-block">
-					<h4 class="text-block__heading">
-						Where to find sally
-					</h4>
-					<h5 class="text-block__callout">
-						<span>Sally’s Kitchen is a longstanding favourite of Melbourne’s city food scene.</span>
-					</h5>
-					<div class="text-block__body">
-						<p>
-							Sally’s Kitchen is a friendly and relaxed place to enjoy great food.
-						</p>
-						<p>
-							Find Sally talking up a storm and serving delicious food at <u>Shop one 295 Exhibition St Melbourne, 3000</u>
-						</p>
-						<p>
-							If you’d like to make a booking or talk about putting together a fabulous function, please call Sally and her team.
+				<div class="the-latest__cell" style="background-image: url(img/events.jpg);">
+					<div class="the-latest__cell-inner">
+						<h6 class="the-latest__cell-heading">Upcoming events</h6>
+						<p class="the-latest__cell-text">
+							Sally is celebrating 8 years on July 13th
 						</p>
 					</div>
+
+					<a href="https://www.facebook.com/sallys.kitchen/events" target="_blank" class="the-latest__cell-action">
+						<span class="the-latest__cell-circle">
+							<svg class="icon the-latest__cell-icon">
+								<use xlink:href="#icon-facebook"></use>
+							</svg>
+						</span>
+						RSVP ON FACEBOOK
+					</a>
 				</div>
-				<div class="text-block">
-					<h4 class="text-block__heading">
-						Opening Hours
-					</h4>
-					<div class="text-block__body">
-						<p>
-							7:00am - 4:00pm Monday to Wednesday <br>
-							7:00 am - 10:00pm Thursday & Friday 
-						</p>
+			</div>
+		</div>
+	</section>
+	<section class="where">
+		<div class="text-block">
+			<h4 class="text-block__heading">
+				Where to find sally
+			</h4>
+			<h5 class="text-block__callout">
+				<span>Sally’s Kitchen is a longstanding favourite of Melbourne’s city food scene.</span>
+			</h5>
+			<div class="text-block__body">
+				<p>
+					Sally’s Kitchen is a friendly and relaxed place to enjoy great food.
+				</p>
+				<p>
+					Find Sally talking up a storm and serving delicious food at
+					<u>Shop one 295 Exhibition St Melbourne, 3000</u>
+				</p>
+				<p>
+					If you’d like to make a booking or talk about putting together a fabulous function, please call Sally and her team.
+				</p>
+			</div>
+		</div>
+		<div class="text-block">
+			<h4 class="text-block__heading">
+				Opening Hours
+			</h4>
+			<div class="text-block__body">
+				<p>
+					7:00am - 4:00pm Monday to Wednesday
+					<br> 7:00 am - 10:00pm Thursday & Friday
+				</p>
+			</div>
+			<div class="contact-row">
+				<a href="mailto:sally@sallyskitchen.com.au" class="contact-row__item">
+					<span class="contact-row__circle">
+						<svg class="icon contact-row__icon">
+							<use xlink:href="#icon-letter"></use>
+						</svg>
+					</span>
+					Email Sally
+				</a>
+				<a class="contact-row__item">
+					<span class="contact-row__circle">
+						<svg class="icon contact-row__icon">
+							<use xlink:href="#icon-phone"></use>
+						</svg>
+					</span>
+					(03) 9650 9222
+				</a>
+			</div>
+			<!-- contact-row -->
 
-						<p>
-							<strong>Easter Hours</strong><br/>
-							Thursday 29th March &mdash; 7:00am - 2:00pm <br>
-							Friday 30th March &mdash; CLOSED <br>
-							Monday 2nd April &mdash; CLOSED <br>
-							Tuesday 3rd April &mdash; 7:00am - 4:00pm
-						</p>
-					</div>
-					<div class="contact-row">
-						<a href="mailto:sally@sallyskitchen.com.au" class="contact-row__item">
-							<span class="contact-row__circle">
-								<svg class="icon contact-row__icon">
-									<use xlink:href="#icon-letter"></use>
-								</svg>
-							</span>
-							Email Sally
-						</a>
-						<a class="contact-row__item">
-							<span class="contact-row__circle">
-								<svg class="icon contact-row__icon">
-									<use xlink:href="#icon-phone"></use>
-								</svg>
-							</span>
-							(03) 9650 9222
-						</a>
-					</div><!-- contact-row -->
+		</div>
+		<div class="where__map">
+			<div class="where__map-inner" id="map">
 
-				</div>
-				<div class="where__map">
-					<div class="where__map-inner" id="map">
+			</div>
+		</div>
+	</section>
 
-					</div>
-				</div>
-			</section>
-
-			<!-- <section class="popup-message">
+	<!-- <section class="popup-message">
 				<div class="popup-message__window">
  				<div class="popup-message__close">close</div>
 
@@ -363,62 +373,78 @@
 
 				</div>
 			</section> -->
-			<style>
-				.popup-message {
-					position: fixed;
-					top: 0;
-					left: 0;
-					height: 100%;
-					width: 100%;
-					z-index: 2001;
-					background-color: rgba(0, 0, 0, 0.6);
-				}
-				.popup-message__window {
-					width: 80%;
-					padding: 5% 7%;
-					position: absolute;
-					top: 50%;
-					transform: translateY(-50%);
-					left: 10%;
-					background-color: #efede4;
-					box-sizing: border-box;
-				}
-				.popup-message__close {
-					position: absolute;
-					top: 1em;
-					right: 1.5em;
-					text-decoration: underline;
-					cursor: pointer;
-					line-height: 1;
-				}
+	<style>
+		.popup-message {
+			position: fixed;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			z-index: 2001;
+			background-color: rgba(0, 0, 0, 0.6);
+		}
 
-				.popup-message__close:hover {
-					text-decoration: none;
-				}
-			</style>
+		.popup-message__window {
+			width: 80%;
+			padding: 5% 7%;
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			left: 10%;
+			background-color: #efede4;
+			box-sizing: border-box;
+		}
 
-			<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-			<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
-			<script src="js/plugins.js"></script>
-			<script src="js/main.js"></script>
-			<script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
+		.popup-message__close {
+			position: absolute;
+			top: 1em;
+			right: 1.5em;
+			text-decoration: underline;
+			cursor: pointer;
+			line-height: 1;
+		}
 
-			<script>
-				$( document ).ready(function() {
- 					$(".popup-message").click(function() {
-						 $(this).fadeOut(200);
-					 })
+		.popup-message__close:hover {
+			text-decoration: none;
+		}
+
+	</style>
+
+	<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script>
+		window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')
+
+	</script>
+	<script src="js/plugins.js"></script>
+	<script src="js/main.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
+
+	<script>
+		$(document).ready(function () {
+			$(".popup-message").click(function () {
+				$(this).fadeOut(200);
+			})
+		});
+
+	</script>
+
+	<script>
+		(function (b, o, i, l, e, r) {
+			b.GoogleAnalyticsObject = l;
+			b[l] || (b[l] =
+				function () {
+					(b[l].q = b[l].q || []).push(arguments)
 				});
-			
-			</script>
+			b[l].l = +new Date;
+			e = o.createElement(i);
+			r = o.getElementsByTagName(i)[0];
+			e.src = 'https://www.google-analytics.com/analytics.js';
+			r.parentNode.insertBefore(e, r)
+		}(window, document, 'script', 'ga'));
+		ga('create', 'UA-74529203-1', 'auto');
+		ga('send', 'pageview');
 
-			<script>
-				(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-					function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-				e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-				e.src='https://www.google-analytics.com/analytics.js';
-				r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-				ga('create','UA-74529203-1','auto');ga('send','pageview');
-			</script>
-		</body>
-		</html>
+	</script>
+</body>
+
+</html>
