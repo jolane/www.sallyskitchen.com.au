@@ -13,6 +13,13 @@
 		right: 25px;
 	}
 
+	&--tripadvisor {
+		top: 120px;
+		@include break(to-mobile) {
+			top: 75px;
+		}
+	}
+
 
 	&__copy {
 		@include break(to-mobile) {
