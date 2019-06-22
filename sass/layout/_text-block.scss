@@ -17,6 +17,10 @@
 			margin: 0 0 2.5em 0;
 		}
 
+		& a {
+			color: inherit;
+		}
+
 		@include break(to-mobile) {
 			padding: 0 35px;
 		}
